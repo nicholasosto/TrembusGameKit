@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>TrembusGameKitTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>E6BEC6581ECF250700FB2254</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>E6E60ED51ECDF63800338A71</key>
 		<dict>
 			<key>primary</key>

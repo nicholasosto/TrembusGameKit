@@ -8,24 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		E64ABBC91ECE3166001BEF3B /* TGKMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64ABBC81ECE3166001BEF3B /* TGKMenuItem.swift */; };
+		E6B516A71ECF755000F8D91C /* TGKTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B516A61ECF755000F8D91C /* TGKTimer.swift */; };
 		E6E60EDB1ECDF63800338A71 /* TrembusGameKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E6E60ED91ECDF63800338A71 /* TrembusGameKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6E60EE21ECDF64D00338A71 /* TGKVeritcalScrollWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E60EE11ECDF64D00338A71 /* TGKVeritcalScrollWindow.swift */; };
-		E6E60F171ECDF9B700338A71 /* scrollBar.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E60F131ECDF9B700338A71 /* scrollBar.png */; };
-		E6E60F181ECDF9B700338A71 /* scrollIndicator.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E60F141ECDF9B700338A71 /* scrollIndicator.png */; };
-		E6E60F191ECDF9B700338A71 /* scroll_item1.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E60F151ECDF9B700338A71 /* scroll_item1.png */; };
-		E6E60F1A1ECDF9B700338A71 /* scroll_item2.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E60F161ECDF9B700338A71 /* scroll_item2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E64ABBC81ECE3166001BEF3B /* TGKMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGKMenuItem.swift; sourceTree = "<group>"; };
+		E6B516A61ECF755000F8D91C /* TGKTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGKTimer.swift; sourceTree = "<group>"; };
 		E6E60ED61ECDF63800338A71 /* TrembusGameKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TrembusGameKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6E60ED91ECDF63800338A71 /* TrembusGameKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrembusGameKit.h; sourceTree = "<group>"; };
 		E6E60EDA1ECDF63800338A71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6E60EE11ECDF64D00338A71 /* TGKVeritcalScrollWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGKVeritcalScrollWindow.swift; sourceTree = "<group>"; };
-		E6E60F131ECDF9B700338A71 /* scrollBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrollBar.png; sourceTree = "<group>"; };
-		E6E60F141ECDF9B700338A71 /* scrollIndicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrollIndicator.png; sourceTree = "<group>"; };
-		E6E60F151ECDF9B700338A71 /* scroll_item1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scroll_item1.png; sourceTree = "<group>"; };
-		E6E60F161ECDF9B700338A71 /* scroll_item2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scroll_item2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +33,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E6B516861ECF55FC00F8D91C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E6B516A61ECF755000F8D91C /* TGKTimer.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		E6BEC6541ECF217B00FB2254 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E6E60EE11ECDF64D00338A71 /* TGKVeritcalScrollWindow.swift */,
+				E64ABBC81ECE3166001BEF3B /* TGKMenuItem.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		E6E60ECC1ECDF63800338A71 = {
 			isa = PBXGroup;
 			children = (
@@ -58,24 +69,12 @@
 		E6E60ED81ECDF63800338A71 /* TrembusGameKit */ = {
 			isa = PBXGroup;
 			children = (
-				E6E60F121ECDF99100338A71 /* Assets */,
-				E6E60EE11ECDF64D00338A71 /* TGKVeritcalScrollWindow.swift */,
-				E64ABBC81ECE3166001BEF3B /* TGKMenuItem.swift */,
+				E6B516861ECF55FC00F8D91C /* Utility */,
+				E6BEC6541ECF217B00FB2254 /* UI */,
 				E6E60ED91ECDF63800338A71 /* TrembusGameKit.h */,
 				E6E60EDA1ECDF63800338A71 /* Info.plist */,
 			);
 			path = TrembusGameKit;
-			sourceTree = "<group>";
-		};
-		E6E60F121ECDF99100338A71 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				E6E60F131ECDF9B700338A71 /* scrollBar.png */,
-				E6E60F141ECDF9B700338A71 /* scrollIndicator.png */,
-				E6E60F151ECDF9B700338A71 /* scroll_item1.png */,
-				E6E60F161ECDF9B700338A71 /* scroll_item2.png */,
-			);
-			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,6 +115,7 @@
 		E6E60ECD1ECDF63800338A71 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Nicholas Osto";
 				TargetAttributes = {
@@ -149,10 +149,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6E60F181ECDF9B700338A71 /* scrollIndicator.png in Resources */,
-				E6E60F171ECDF9B700338A71 /* scrollBar.png in Resources */,
-				E6E60F1A1ECDF9B700338A71 /* scroll_item2.png in Resources */,
-				E6E60F191ECDF9B700338A71 /* scroll_item1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6B516A71ECF755000F8D91C /* TGKTimer.swift in Sources */,
 				E6E60EE21ECDF64D00338A71 /* TGKVeritcalScrollWindow.swift in Sources */,
 				E64ABBC91ECE3166001BEF3B /* TGKMenuItem.swift in Sources */,
 			);
