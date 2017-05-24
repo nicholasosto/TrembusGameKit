@@ -46,7 +46,7 @@ public class TGKTimerLabel: SKLabelNode {
     }
     
     private func upadteLabelText() {
-        print("time Left: \(timer.getTimeLeft())")
+
         switch timer.getTimeLeft(){
         case (0...59):
             formatString = .seconds
@@ -76,13 +76,18 @@ public class TGKTimerLabel: SKLabelNode {
 public class TGKTimer {
     
     public var timeFunction: ()->()?
-    
+    private var enabled:Bool = false
     private var timeSinceUpdate: TimeInterval = 0
     private var timeLimit: Int
-    private var timeLeft: Int = 0
-    private var enabled:Bool = false
+    private var timeLeft: Int = 0 {
+        didSet {
+            if(timeLeft <= 0) {
+            
+                timeFunction()
+            }
+        }
+    }
 
-    
     public init(timeLimitDays: Int = 0, timeLimitHours:Int = 0, timeLimitMinutes: Int = 0, timeLimitSeconds:Int = 0, timeFunction: @escaping ()->()?) {
         
         self.timeLimit = (timeLimitDays * 86400) + (timeLimitHours * 3600) + (timeLimitMinutes * 60) + timeLimitSeconds
@@ -132,11 +137,6 @@ public class TGKTimer {
             self.timeLeft -= 1
             
             timeSinceUpdate = 0
-        }
-        
-        if(timeLeft <= 0) {
-            
-            timeFunction()
         }
     }
 }

@@ -7,19 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E631C01A1ED36C2000FEAFCE /* TGKHealthBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E631C0191ED36C2000FEAFCE /* TGKHealthBar.swift */; };
+		E631C01C1ED36DBA00FEAFCE /* TGKGameSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = E631C01B1ED36DBA00FEAFCE /* TGKGameSprite.swift */; };
+		E639F95E1ED140D40088C35C /* TGKHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = E639F95D1ED140D40088C35C /* TGKHud.swift */; };
 		E64ABBC91ECE3166001BEF3B /* TGKMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64ABBC81ECE3166001BEF3B /* TGKMenuItem.swift */; };
+		E68FACD31ED518F90092D90F /* TGKSpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68FACD21ED518F90092D90F /* TGKSpriteComponent.swift */; };
+		E68FAD7A1ED51BF70092D90F /* TGKSoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68FAD791ED51BF70092D90F /* TGKSoundManager.swift */; };
+		E68FAFC51ED52DF50092D90F /* TGKAnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68FAFC41ED52DF50092D90F /* TGKAnimationManager.swift */; };
 		E6B516BF1ECF80E300F8D91C /* TGKTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B516BE1ECF80E300F8D91C /* TGKTimer.swift */; };
+		E6B516E31ED117B100F8D91C /* TGKGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B516E21ED117B100F8D91C /* TGKGrid.swift */; };
 		E6E60EDB1ECDF63800338A71 /* TrembusGameKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E6E60ED91ECDF63800338A71 /* TrembusGameKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6E60EE21ECDF64D00338A71 /* TGKVeritcalScrollWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E60EE11ECDF64D00338A71 /* TGKVeritcalScrollWindow.swift */; };
+		E6EE09461ED3B11E00AF62E3 /* TGKUtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE09451ED3B11E00AF62E3 /* TGKUtilityFunctions.swift */; };
+		E6EE09481ED3B20100AF62E3 /* TGKKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE09471ED3B20100AF62E3 /* TGKKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E631C0191ED36C2000FEAFCE /* TGKHealthBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGKHealthBar.swift; sourceTree = "<group>"; };
+		E631C01B1ED36DBA00FEAFCE /* TGKGameSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGKGameSprite.swift; sourceTree = "<group>"; };
+		E639F95D1ED140D40088C35C /* TGKHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGKHud.swift; sourceTree = "<group>"; };
 		E64ABBC81ECE3166001BEF3B /* TGKMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGKMenuItem.swift; sourceTree = "<group>"; };
+		E68FACD21ED518F90092D90F /* TGKSpriteComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGKSpriteComponent.swift; sourceTree = "<group>"; };
+		E68FAD791ED51BF70092D90F /* TGKSoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGKSoundManager.swift; sourceTree = "<group>"; };
+		E68FAFC41ED52DF50092D90F /* TGKAnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGKAnimationManager.swift; sourceTree = "<group>"; };
 		E6B516BE1ECF80E300F8D91C /* TGKTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGKTimer.swift; sourceTree = "<group>"; };
+		E6B516E21ED117B100F8D91C /* TGKGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGKGrid.swift; sourceTree = "<group>"; };
 		E6E60ED61ECDF63800338A71 /* TrembusGameKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TrembusGameKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6E60ED91ECDF63800338A71 /* TrembusGameKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrembusGameKit.h; sourceTree = "<group>"; };
 		E6E60EDA1ECDF63800338A71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6E60EE11ECDF64D00338A71 /* TGKVeritcalScrollWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGKVeritcalScrollWindow.swift; sourceTree = "<group>"; };
+		E6EE09451ED3B11E00AF62E3 /* TGKUtilityFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGKUtilityFunctions.swift; sourceTree = "<group>"; };
+		E6EE09471ED3B20100AF62E3 /* TGKKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGKKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,10 +51,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E631C0181ED36C0000FEAFCE /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				E631C0191ED36C2000FEAFCE /* TGKHealthBar.swift */,
+				E631C01B1ED36DBA00FEAFCE /* TGKGameSprite.swift */,
+			);
+			name = Nodes;
+			sourceTree = "<group>";
+		};
+		E68FACD11ED518D40092D90F /* GameKit */ = {
+			isa = PBXGroup;
+			children = (
+				E68FACD21ED518F90092D90F /* TGKSpriteComponent.swift */,
+			);
+			name = GameKit;
+			sourceTree = "<group>";
+		};
 		E6B516861ECF55FC00F8D91C /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				E68FAFC41ED52DF50092D90F /* TGKAnimationManager.swift */,
 				E6B516BE1ECF80E300F8D91C /* TGKTimer.swift */,
+				E6B516E21ED117B100F8D91C /* TGKGrid.swift */,
+				E6EE09451ED3B11E00AF62E3 /* TGKUtilityFunctions.swift */,
+				E6EE09471ED3B20100AF62E3 /* TGKKeys.swift */,
+				E68FAD791ED51BF70092D90F /* TGKSoundManager.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -55,6 +95,7 @@
 			children = (
 				E6E60EE11ECDF64D00338A71 /* TGKVeritcalScrollWindow.swift */,
 				E64ABBC81ECE3166001BEF3B /* TGKMenuItem.swift */,
+				E639F95D1ED140D40088C35C /* TGKHud.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -78,6 +119,8 @@
 		E6E60ED81ECDF63800338A71 /* TrembusGameKit */ = {
 			isa = PBXGroup;
 			children = (
+				E68FACD11ED518D40092D90F /* GameKit */,
+				E631C0181ED36C0000FEAFCE /* Nodes */,
 				E6B516DB1ED0C0CE00F8D91C /* SupportFiles */,
 				E6B516861ECF55FC00F8D91C /* Utility */,
 				E6BEC6541ECF217B00FB2254 /* UI */,
@@ -167,9 +210,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E631C01C1ED36DBA00FEAFCE /* TGKGameSprite.swift in Sources */,
+				E6B516E31ED117B100F8D91C /* TGKGrid.swift in Sources */,
 				E6B516BF1ECF80E300F8D91C /* TGKTimer.swift in Sources */,
+				E631C01A1ED36C2000FEAFCE /* TGKHealthBar.swift in Sources */,
+				E6EE09481ED3B20100AF62E3 /* TGKKeys.swift in Sources */,
+				E68FAD7A1ED51BF70092D90F /* TGKSoundManager.swift in Sources */,
 				E6E60EE21ECDF64D00338A71 /* TGKVeritcalScrollWindow.swift in Sources */,
 				E64ABBC91ECE3166001BEF3B /* TGKMenuItem.swift in Sources */,
+				E639F95E1ED140D40088C35C /* TGKHud.swift in Sources */,
+				E68FAFC51ED52DF50092D90F /* TGKAnimationManager.swift in Sources */,
+				E6EE09461ED3B11E00AF62E3 /* TGKUtilityFunctions.swift in Sources */,
+				E68FACD31ED518F90092D90F /* TGKSpriteComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

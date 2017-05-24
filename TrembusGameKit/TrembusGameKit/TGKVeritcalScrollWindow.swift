@@ -11,7 +11,6 @@ import SpriteKit
 
 protocol SwipeDelegate {
     func touchesMoved()
-   // func touchesEnded()
 }
 
 
@@ -23,9 +22,7 @@ public class TGKVerticalScrollWindow: SwipeDelegate {
     var scrollView: TGKScrollView
     var scrollBar: TGKScrollBar
     
-    
     //Convinience Properties
-    
     var scrollHeight: CGFloat = 0
     var scrollContainerHeight: CGFloat = 0
     
@@ -45,6 +42,7 @@ public class TGKVerticalScrollWindow: SwipeDelegate {
         
         // Setup frame if it exists
         if let frameSprite = frameSprite {
+            
             self.frameSprite = frameSprite
             
             node.addChild(frameSprite)
@@ -61,24 +59,27 @@ public class TGKVerticalScrollWindow: SwipeDelegate {
         self.scrollBar.position.x += scrollView.size.width/2 - scrollBar.size.width/2 - 10
         
         // assign Delegate
-        
         scrollView.delegate = self
         
         self.setScrollPosition()
     }
     
     public convenience init(backgroundTextureName: String, menuItems:[SKSpriteNode], frameTextureName: String?, itemGapHeight:CGFloat? = 0) {
+        
         var frameSprite: SKSpriteNode?
         
         if let frameTextureName = frameTextureName {
+            
             frameSprite = SKSpriteNode(imageNamed: frameTextureName)
         }
-        let scrollView = TGKScrollView(textureName: backgroundTextureName, itemGapHeight: itemGapHeight)
-        self.init(scrollView: scrollView, menuItems: menuItems, frameSprite: frameSprite)
         
+        let scrollView = TGKScrollView(textureName: backgroundTextureName, itemGapHeight: itemGapHeight)
+        
+        self.init(scrollView: scrollView, menuItems: menuItems, frameSprite: frameSprite)
     }
     
     private func setScrollPosition() {
+        
         let cameraLocation = scrollView.getCameraPosition() - 0.6
         
         let scaleFactor = (scrollBar.size.height + scrollBar.positionIndicator.size.height)/2
@@ -87,21 +88,13 @@ public class TGKVerticalScrollWindow: SwipeDelegate {
     }
     
     public func touchesMoved() {
-        setScrollPosition()
         
+        setScrollPosition()
     }
-    
-//    public func touchesEnded() {
-//        
-//        let cameraLocation = scrollView.getCameraPosition() - 0.6
-//        
-//        let scaleFactor = (scrollBar.size.height + scrollBar.positionIndicator.size.height)/2
-//        
-//        scrollBar.moveIndicatorToPosY(scaleFactor * cameraLocation * -1)
-//    }
 }
 
 internal class TGKScrollView: SKSpriteNode {
+    
     // Delegate
     var delegate: SwipeDelegate?
     
@@ -132,7 +125,6 @@ internal class TGKScrollView: SKSpriteNode {
         
         self.clippingFrame = texture
         self.itemGapHeight = itemGapHeight ?? 0
-        
         
         super.init(texture: texture, color: .white, size: texture.size())
         
@@ -206,8 +198,6 @@ internal class TGKScrollView: SKSpriteNode {
         if menuCamera.position.y >= bottomPositionY { menuCamera.run(bottomBounceAction(bottomPosition: bottomPositionY)) }
 
         if menuCamera.position.y <= topPositionY { menuCamera.run(topBounceAction(topPosition: topPositionY)) }
-        
-
     }
     
     // Bounce Effect Actions
@@ -236,7 +226,6 @@ internal class TGKScrollView: SKSpriteNode {
         
         return groupAction
     }
-    
 }
 
 internal class TGKScrollBar:SKSpriteNode {
@@ -266,7 +255,6 @@ internal class TGKScrollBar:SKSpriteNode {
         
         super.init(texture: texture, color: .white, size: texture.size())
         
-        
         self.size = self.maskingSpriteNode.size
         
         // Add Children
@@ -275,7 +263,6 @@ internal class TGKScrollBar:SKSpriteNode {
         
         // set Z Position
         maskingNode.zPosition = 1
-    
     }
     
     internal required init?(coder aDecoder: NSCoder) {
@@ -294,7 +281,6 @@ internal class TGKScrollBar:SKSpriteNode {
             positionIndicator.position.y = posY
         }
     }
-
 }
 
 
