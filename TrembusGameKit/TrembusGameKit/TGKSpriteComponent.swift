@@ -8,9 +8,17 @@
 
 import GameplayKit
 
-public class TGKSpriteComponent: GKComponent {
+public class TGKSpriteComponent: GKComponent{
     
+    public let node: TGKGameSprite
     
+    public init(node: TGKGameSprite) {
+        self.node = node
+        super.init()
+    }
     
+    public required init?(coder aDecoder: NSCoder) {
+        fatalError("TGKSpriteComponent: \(#function) not configured")
+    }
     
 }

@@ -4,12 +4,13 @@
 //
 //  Created by Nicholas Osto on 5/22/17.
 //  Copyright © 2017 Nicholas Osto. All rights reserved.
-//
+
 
 import Foundation
 import SpriteKit
+import GameplayKit
 
-open class TGKGameSprite: SKSpriteNode {
+open class TGKGameSprite: SKSpriteNode{
     
     public let gameClass: GameClass
     
@@ -42,8 +43,9 @@ open class TGKGameSprite: SKSpriteNode {
         addChild(healthBar)
     }
     
+
     public func walk() {
-    
+        guard nil == action(forKey: "\(gameClass.rawValue)_walk") else { return }
         run(SKAction.repeatForever(TGKAnimationManager.playAnimation(gameClass: gameClass, tag: .walking)), withKey: "\(gameClass.rawValue)_walk")
     }
     
@@ -53,13 +55,15 @@ open class TGKGameSprite: SKSpriteNode {
     }
     
     public func attack() {
-        
+        guard nil == action(forKey: "\(gameClass.rawValue)_attack") else { return }
         run(TGKSoundManager.playSFX(gameClass: gameClass, tag: .attack))
         run(TGKAnimationManager.playAnimation(gameClass: gameClass, tag: .attack), withKey: "\(gameClass.rawValue)_attack")
         
     }
     
-    public func hurt() {
+    public func hurt(byAmount amount: CGFloat) {
+        guard nil == action(forKey: "\(gameClass.rawValue)_hurt") else { return }
+        self.healthBar?.modifyHealth(byAmount: amount)
         run(TGKSoundManager.playSFX(gameClass: gameClass, tag: .hurt))
         run(TGKAnimationManager.playAnimation(gameClass: gameClass, tag: .hurt), withKey: "\(gameClass.rawValue)_hurt")
     }
@@ -68,5 +72,9 @@ open class TGKGameSprite: SKSpriteNode {
         self.removeAllActions()
         run(TGKSoundManager.playSFX(gameClass: gameClass, tag: .death))
         run(TGKAnimationManager.playAnimation(gameClass: gameClass, tag: .death), withKey: "\(gameClass.rawValue)_death")
+        self.removeFromParent()
+        
+        
+        
     }
 }

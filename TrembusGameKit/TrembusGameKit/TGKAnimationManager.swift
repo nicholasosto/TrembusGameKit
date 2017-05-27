@@ -35,6 +35,8 @@ open class TGKAnimationManager {
         var animationFrames:[SKTexture] = [SKTexture]()
         
         let resourcePath = NSURL(string: Bundle.main.resourcePath!)?.absoluteURL
+        
+       // print(resourcePath?.absoluteString)
         let resourcesContent = try! FileManager().contentsOfDirectory(at: resourcePath!, includingPropertiesForKeys: nil, options: FileManager.DirectoryEnumerationOptions.skipsHiddenFiles)
         
         for url in resourcesContent {
